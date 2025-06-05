@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import  HomeView from "../pages/HomeView/HomeView"
+import  ArticlesView from "../pages/ArticlesView/ArticlesView";
 export function meta({}: Route.MetaArgs) {
   return [
     { title: "E-Commerce App" },
@@ -7,6 +7,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function Home() {
-  return <HomeView />;
+export default function Articles() {
+  return <ArticlesView />;
 }
