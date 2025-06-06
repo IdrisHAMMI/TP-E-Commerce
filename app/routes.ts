@@ -8,6 +8,6 @@ export default [
     ]),
     route("cart", "routes/cart.tsx"),
     route("login", "routes/login.tsx"),
-    route("admin", "routes/admin.tsx"),
+    route("admin-login", "routes/admin-login.tsx"),
 ] satisfies RouteConfig;
 

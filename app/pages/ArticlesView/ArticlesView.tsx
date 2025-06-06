@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { useCart } from "~/contexts/CartContext/CartContext";
 
@@ -8,7 +8,7 @@ const Products = () => {
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(4); // NUMBER OF PRODUCTS PER PAGE
-  const { addToCart } = useCart(); // Destructure addToCart from useCart
+  const { addToCart } = useCart();
 
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
@@ -31,7 +31,7 @@ const Products = () => {
       quantity: 1,
       image: product.image,
     };
-    addToCart(item); // Add the product to the cart
+    addToCart(item); // ADDS PRODUCT TO CART
   };
 
   if (loading) {
@@ -85,7 +85,7 @@ const Products = () => {
             </Link>
             <button
             onClick={() => handleAddToCart(product)}
-            className="w-full mt-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors"
+            className="w-full mt-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors cursor-pointer"
           >Add to Cart</button>
           </div>
         ))}

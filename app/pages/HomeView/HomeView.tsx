@@ -1,20 +1,10 @@
-import { useEffect, useState } from "react";
-
 export default function HomeView() {
-  const [time, setTime] = useState(new Date().toLocaleTimeString());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date().toLocaleTimeString());
-    }, 1000);
-
-    return () => clearInterval(interval);
-  }, []);
-  // SIMPLE TEMPLATE HOME PAGE, WILL CHANGE LATER
+  // SIMPLE TEMPLATE HOME PAGE, WILL CHANGE LATER (maybe, should prob keep it simple...)
     return (
-        <div>
-        <h1>Welcome to the Home Page!</h1>
-        <p>The current time is: {time}</p>
+        <div className="flex flex-col items-center justify-center min-h-screen">
+          <h1>Welcome to the Home Page!</h1>
+            <p>Go to the header to use the features of this application.</p>
         </div>
     );
 }

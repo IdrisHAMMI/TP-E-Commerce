@@ -1,5 +1,5 @@
 import type { Route } from "./+types/home";
-import  ArticlesView from "../pages/ArticlesView/ArticlesView";
+import AdminLoginView from "../pages/AdminLoginView/AdminLoginView";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,8 +7,7 @@ export function meta({}: Route.MetaArgs) {
     { name: "description", content: "E-Commerce App TP" },
   ];
 }
-
-// PLACEHOLDER ROUTE VIEW
-export default function Articles() {
-  return <ArticlesView />;
+1
+export default function Home() {
+  return <AdminLoginView />;
 }
