@@ -10,7 +10,7 @@ export default function HomeView() {
 
     return () => clearInterval(interval);
   }, []);
-
+  // SIMPLE TEMPLATE HOME PAGE, WILL CHANGE LATER
     return (
         <div>
         <h1>Welcome to the Home Page!</h1>
