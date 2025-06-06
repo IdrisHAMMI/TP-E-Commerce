@@ -7,9 +7,8 @@ import {
   ScrollRestoration,
 } from "react-router";
 
-import { Header
-  
- } from "./layouts/Header/Header";
+import { Header } from "./layouts/Header/Header";
+import { CartProvider } from "./contexts/CartContext/CartContext";
 import type { Route } from "./+types/root";
 import "./app.css";
 
@@ -28,6 +27,7 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
+     <CartProvider>
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
@@ -37,12 +37,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Header />
-          
         {children}
         <ScrollRestoration />
         <Scripts />
       </body>
     </html>
+    </CartProvider>
   );
 }
 

@@ -9,8 +9,9 @@ export const Header = () => {
                     <ul className="flex space-x-4">
                         <li><a href="/" className="hover:underline">Home</a></li>
                         <li><a href="/articles" className="hover:underline">Articles</a></li>
-                        <li><a href="/Login" className="hover:underline"></a></li>
-                        <li><a href="/Admin" className="hover:underline"></a></li>
+                        <li><a href="/login" className="hover:underline"></a></li>
+                        <li><a href="/admin" className="hover:underline"></a></li>
+                        <li><a href="/cart" className="hover:underline">Cart</a></li>
                     </ul>
                 </nav>
             </div>
