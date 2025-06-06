@@ -6,7 +6,7 @@ const ProductDetail = () => {
   const { articleId } = useParams();
   const [articles, setProduct] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const { addToCart } = useCart(); // Destructure addToCart from useCart
+  const { addToCart } = useCart();
 
   // FETCHES PRODUCT DETAILS w/ ROUTE ENDPOINT
   useEffect(() => {
@@ -30,7 +30,7 @@ const ProductDetail = () => {
       quantity: 1,
       image: product.image,
     };
-    addToCart(item); // Add the product to the cart
+    addToCart(item); // ADDS PRODUCT TO CART
   };
 
   if (loading) {
