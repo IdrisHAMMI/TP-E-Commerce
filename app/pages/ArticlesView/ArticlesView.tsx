@@ -79,8 +79,7 @@ const Products = () => {
             <p className="text-lg font-semibold text-green-500 pb-2">${product.price}</p>
             <Link
               to={`/articles/${product.id}`}
-              className="w-full mt-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors"
-            >
+                className="inline-block px-4 py-1 text-sm bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors"            >
               View Details
             </Link>
             <button

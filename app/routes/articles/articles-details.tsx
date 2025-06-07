@@ -51,7 +51,7 @@ const ProductDetail = () => {
             <p className="text-xl font-semibold text-green-500 mb-4">
               ${articles.price}
             </p>
-            <button onClick={() => handleAddToCart(articles)} className="w-full py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors">
+            <button onClick={() => handleAddToCart(articles)} className="w-full py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 transition-colors cursor-pointer">
               Add to Cart
             </button>
           </div>

@@ -18,7 +18,7 @@ const AdminLogin = () => {
     // CHECK IF THE ENTERED CREDS MATCH THE HARDCODED ONES
     if (username === adminUsername && password === adminPassword) {
       // STORE ADMIN INFO IN SESSION STORAGE
-      sessionStorage.setItem("adminCreds", JSON.stringify({ username }));
+      sessionStorage.setItem("admin", JSON.stringify({ username }));
 
       // REDIRECT TO HOME VIEW
       window.location.href = "/";
